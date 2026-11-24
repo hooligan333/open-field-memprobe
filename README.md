@@ -48,7 +48,7 @@ Pass lines appear for the first five passes, then every tenth pass, plus any pas
 
 ## Build status
 
-Built with open-field's `pack_build.py build3` (main at 378eb86). `pack_build.py check` and `publish_check.py` pass. **Not yet run on a unit.** The per-frame time above is an estimate from the compiled loop (about 11 instructions per word). The base logs the real figure as `cards: 'memprobe' frame call: …`.
+Built with open-field's `pack_build.py build3` (main at 378eb86). `pack_build.py check` and `publish_check.py` pass. The per-frame time above is an estimate from the compiled loop (about 11 instructions per word). The base logs the real figure as `cards: 'memprobe' frame call: …`.
 
 ## Files
 
