@@ -1,0 +1,25 @@
+{
+  "about": "memprobe: a probe for open-field issue 15, READ mode. It watches the two stretches of DDR that OS 1.7.3 appears never to use (0x83800000-0x84000000, 0x84d30000-0x88000000 and 0x88040000-0x8c000000; the display's second frame buffer at 0x88000000 is left out) and says in the log whether anything else writes there, by checksums only: nothing is written. Its sibling memprobe-w (recipe_w.json) writes a pattern and checks every word. It changes no place of the firmware and needs the base (level 1).",
+  "name": "memprobe",
+  "version": 3,
+  "interface": 1,
+  "build": "memprobe",
+  "sources": [
+    "examples/memprobe/memprobe.cpp",
+    "examples/memprobe/memprobe_card.s"
+  ],
+  "works_with": [],
+  "serves": [],
+  "exports": [],
+  "pictures": [],
+  "card": {
+    "level": 1,
+    "frame": "memprobe_frame",
+    "pick": null,
+    "pictures": false
+  },
+  "marks": [],
+  "named": true,
+  "sum": true,
+  "path": null
+}

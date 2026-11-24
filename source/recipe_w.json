@@ -1,0 +1,25 @@
+{
+  "about": "memprobe-w: memprobe in WRITE mode (memprobe.cpp). It fills the two stretches of DDR that OS 1.7.3 appears never to use with a pattern made from each word's address and checks every word at every pass. It changes no place of the firmware and needs the base (level 1).",
+  "name": "memprobe-w",
+  "version": 3,
+  "interface": 1,
+  "build": "memprobe_w",
+  "sources": [
+    "examples/memprobe/memprobe_w.cpp",
+    "examples/memprobe/memprobe_w_card.s"
+  ],
+  "works_with": [],
+  "serves": [],
+  "exports": [],
+  "pictures": [],
+  "card": {
+    "level": 1,
+    "frame": "memprobe_w_frame",
+    "pick": null,
+    "pictures": false
+  },
+  "marks": [],
+  "named": true,
+  "sum": true,
+  "path": null
+}
